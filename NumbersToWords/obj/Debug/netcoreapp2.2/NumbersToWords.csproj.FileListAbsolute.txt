@@ -1,0 +1,12 @@
+C:\Users\Danie\OneDrive\Desktop\NumberToWords.Solutions\NumbersToWords\obj\Debug\netcoreapp2.2\NumbersToWords.csprojAssemblyReference.cache
+C:\Users\Danie\OneDrive\Desktop\NumberToWords.Solutions\NumbersToWords\obj\Debug\netcoreapp2.2\NumbersToWords.AssemblyInfoInputs.cache
+C:\Users\Danie\OneDrive\Desktop\NumberToWords.Solutions\NumbersToWords\obj\Debug\netcoreapp2.2\NumbersToWords.AssemblyInfo.cs
+C:\Users\Danie\OneDrive\Desktop\NumberToWords.Solutions\NumbersToWords\obj\Debug\netcoreapp2.2\NumbersToWords.csproj.CoreCompileInputs.cache
+C:\Users\Danie\OneDrive\Desktop\NumberToWords.Solutions\NumbersToWords\bin\Debug\netcoreapp2.2\NumbersToWords.deps.json
+C:\Users\Danie\OneDrive\Desktop\NumberToWords.Solutions\NumbersToWords\bin\Debug\netcoreapp2.2\NumbersToWords.runtimeconfig.json
+C:\Users\Danie\OneDrive\Desktop\NumberToWords.Solutions\NumbersToWords\bin\Debug\netcoreapp2.2\NumbersToWords.runtimeconfig.dev.json
+C:\Users\Danie\OneDrive\Desktop\NumberToWords.Solutions\NumbersToWords\bin\Debug\netcoreapp2.2\NumbersToWords.dll
+C:\Users\Danie\OneDrive\Desktop\NumberToWords.Solutions\NumbersToWords\bin\Debug\netcoreapp2.2\NumbersToWords.pdb
+C:\Users\Danie\OneDrive\Desktop\NumberToWords.Solutions\NumbersToWords\obj\Debug\netcoreapp2.2\NumbersToWords.dll
+C:\Users\Danie\OneDrive\Desktop\NumberToWords.Solutions\NumbersToWords\obj\Debug\netcoreapp2.2\NumbersToWords.pdb
+C:\Users\Danie\OneDrive\Desktop\NumberToWords.Solutions\NumbersToWords\obj\Debug\netcoreapp2.2\NumbersToWords.genruntimeconfig.cache
