@@ -1,49 +1,51 @@
 using System;
+using System.Numerics;
 using System.Collections.Generic;
 
 namespace NumbersToWords.Models
 {
     public class Words
     {
-    static Dictionary <long,string> firstDictionary = new Dictionary<long, string>(){
+    static Dictionary <BigInteger,string> firstDictionary = new Dictionary<BigInteger, string>(){
         {0 , ""},
-        {1 , "one"},
-        {2 , "two"},
-        {3 , "three"},
-        {4, "four"},
-        {5,"five"},
-        {6 , "six"},
-        {7,"seven"},
-        {8,"eight"},
-        {9,"nine"},
-        {10, "ten"},
-        {11,"eleven"},
-        {12,"twelve"},
-        {13,"thirteen"},
-        {14,"fourteen"},
-        {15,"fifteen"},
-        {16,"sixteen"},
-        {17,"seventeen"},
-        {18,"eightteen"},
-        {19,"nineteen"}
+        {1 , " one"},
+        {2 , " two"},
+        {3 , " three"},
+        {4, " four"},
+        {5," five"},
+        {6 , " six"},
+        {7," seven"},
+        {8," eight"},
+        {9," nine"},
+        {10, " ten"},
+        {11," eleven"},
+        {12," twelve"},
+        {13," thirteen"},
+        {14," fourteen"},
+        {15," fifteen"},
+        {16," sixteen"},
+        {17," seventeen"},
+        {18," eightteen"},
+        {19," nineteen"}
     };
     //25
-    static Dictionary <long,string> tens = new Dictionary<long, string>(){
+    static Dictionary <BigInteger,string> tens = new Dictionary<BigInteger, string>(){
+        {0 , ""},
         {1 , ""},
-        {2 , "twenty "},
-        {3 , "thirty "},
-        {4, "forty "},
-        {5,"fifty "},
-        {6 , "sixty "},
-        {7," seventy "},
-        {8,"eighty "},
-        {9," ninety "}
+        {2 , "twenty"},
+        {3 , "thirty"},
+        {4, "forty"},
+        {5,"fifty"},
+        {6 , "sixty"},
+        {7,"seventy"},
+        {8,"eighty"},
+        {9,"ninety"}
     };
 
 
     
 
-        public static string getNumWord(int number){
+        public static string getNumWord(BigInteger number){
            string result = "";
             //125
             if(number >= 1000 && number < 100000)
@@ -78,7 +80,7 @@ namespace NumbersToWords.Models
             
         }
 
-        public static string getNumWordRecursive(long number){
+        public static string getNumWordRecursive(BigInteger number){
            string result = "";
            if (number == 0) {
                 return "zero";     
@@ -124,7 +126,7 @@ namespace NumbersToWords.Models
             }  
              
 
-            public static string translateNum( ulong num, string modifier)
+            public static string translateNum( BigInteger num, string modifier)
         {
             
             if(num == 0)//may not be needed
@@ -140,16 +142,15 @@ namespace NumbersToWords.Models
             }
             if(num > 100) 
             {
-                Console.WriteLine(num);
                 return Words.firstDictionary[num / 100] + " hundred " +  Words.tens[((num % 100) / 10)] + Words.firstDictionary[num % 10] + modifier;
             }
             return "";
         }
-        public static string test(ulong number)
+        public static string test(BigInteger number)
         {
-            string[] modArry = {"", " thousand ", " million ", " billion ", " trillion ", " quadrillion ", " quintrillion "  };
+            string[] modArry = {"", " thousand", " million", " billion", " trillion", " quadrillion", " quintrillion", " sextillion", " septillion", " octillion", " nonillion", " decillion", " undecillion", " duodecillion", " tredecillion", " quattuordecillion", " quindecillion", " sexdecillion", " septemdecillion", " octodecillion", " novemdecillion", " vigintillion"  };
             string result = "";//123456
-            ulong n = number ;
+            BigInteger n = number ;
             if(number == 0)
             {
                 return "zero";
@@ -159,7 +160,6 @@ namespace NumbersToWords.Models
                 result  = translateNum(n % 1000, modArry[i]) + result;
                 n /= 1000;
             }
-            Console.WriteLine(result);
             return result;
         }
 
